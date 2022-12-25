@@ -5,7 +5,7 @@
 ### This is not an easy to do page about the to do list.
 [Zadanie domowe moduł 7](https://tymek20.github.io/modul-7-zadanie/)
 
-![Alt Text](https://github.com/Tymek20/modul-6-zadanie/blob/master/gif/modul%206%20zadanie%20domowe.gif?raw=true)
+![Alt Text](https://github.com/Tymek20/modul-7-zadanie/blob/master/gif/modul%207%20zadanie%20domowe.gif?raw=true)
 
 #### Here is the rest of my works:
 
