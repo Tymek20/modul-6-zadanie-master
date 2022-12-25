@@ -76,7 +76,7 @@
               <button class="list__doneButton button__task--done js-done"> 
               ${task.done ? "✓" : ""} 
               </button>
-            <div class="task${task.done ? " list__tasks--lineThrough" : ""}">  
+            <div class="form__task${task.done ? " list__tasks--lineThrough" : ""}">  
              ${task.content} 
              </div>
               <button class="list__removeButton js-remove">
@@ -105,26 +105,26 @@
 
     const toggleAllDone = () => {
         tasks = tasks.map((task) => ({
-          ...task,
-          done: true,
+            ...task,
+            done: true,
         }));
-      
-        render();
-      };    
 
-const bindButtonsEvents = () => {
-    const markAllDoneButton = document.querySelector(".js-markAllDone");
-  
-    if (markAllDoneButton) {
-      markAllDoneButton.addEventListener("click", toggleAllDone);
-    }
-  
-    const toggleHideDoneButton = document.querySelector(".js-hideDoneTask");
-  
-    if (toggleHideDoneButton) {
-      toggleHideDoneButton.addEventListener("click", toggleHideDoneTasks);
-    }
-  };
+        render();
+    };
+
+    const bindButtonsEvents = () => {
+        const markAllDoneButton = document.querySelector(".js-markAllDone");
+
+        if (markAllDoneButton) {
+            markAllDoneButton.addEventListener("click", toggleAllDone);
+        }
+
+        const toggleHideDoneButton = document.querySelector(".js-hideDoneTask");
+
+        if (toggleHideDoneButton) {
+            toggleHideDoneButton.addEventListener("click", toggleHideDoneTasks);
+        }
+    };
 
 
     const render = () => {
