@@ -12,7 +12,7 @@ html {
 }
 
 .body {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     background-color: hsl(0, 21%, 90%);

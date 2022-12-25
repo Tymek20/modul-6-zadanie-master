@@ -19,8 +19,13 @@
     padding: 10px;
 }
 
+.form__task {
+    font-size: x-large;
+    margin-left: 20px;
+}
+
 .form__addButton {
-    margin: 0 5px;
+    margin-left: 20px;
     cursor: grab;
     border: none;
     background-color: rgb(62 92 106);

@@ -81,11 +81,11 @@
 }
 
 .list__hiddenButton {
-border: none;
-background: transparent;
-font-size: small;
-cursor: grab;
-transition: 0.5s;
+    border: none;
+    background: transparent;
+    font-size: large;
+    cursor: grab;
+    transition: 0.5s;
 }
 
 .list__hiddenButton:hover {
@@ -94,10 +94,11 @@ transition: 0.5s;
 
 .list__hiddenButtonMarkDone {
     border: none;
-background: transparent;
-font-size: small;
-cursor: grab;
-transition: 0.5s;
+    background: transparent;
+    font-size: large;
+    cursor: grab;
+    transition: 0.5s;
+
 }
 
 .list__hiddenButtonMarkDone:hover {
@@ -112,8 +113,9 @@ transition: 0.5s;
     .list__buttonAdditional {
         display: grid;
         grid-template-columns: 1fr;
-     }
+    }
 
     .list__header {
-        grid-template-columns: 1fr;    }
+        grid-template-columns: 1fr;
+    }
 }
