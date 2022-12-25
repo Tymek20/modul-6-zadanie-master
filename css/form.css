@@ -1,0 +1,48 @@
+.form__header {
+    margin-bottom: 1px;
+    padding: 20px 10px;
+    font-size: x-large;
+    background-color: white;
+}
+
+.form__input {
+    background-color: white;
+    display: flex;
+    padding: 10px;
+}
+
+.form__newTask {
+    background-color: rgb(226, 221, 221);
+    border: 1px solid lightgray;
+    cursor: text;
+    flex-basis: 78%;
+    padding: 10px;
+}
+
+.form__addButton {
+    margin: 0 5px;
+    cursor: grab;
+    border: none;
+    background-color: rgb(62 92 106);
+    color: rgb(254, 255, 255);
+    transition: 0.5s;
+}
+
+.form__addButton:hover {
+    transform: scale(1.10);
+}
+
+@media (max-width: 767px) {
+    .form__input {
+        flex-wrap: wrap;
+    }
+
+    .form__newTask {
+        flex-basis: 100%;
+    }
+
+    .form__addButton {
+        flex-basis: 100%;
+        margin: 5px 0;
+    }
+}
