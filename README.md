@@ -9,7 +9,7 @@
 
 #### Here is the rest of my works:
 
-[Currencu Converter](https://tymek20.github.io/Currency-converter/)
+[Currency Converter](https://tymek20.github.io/Currency-converter/)
 
 [Refactoring BEM](https://tymek20.github.io/BEM-refactoring/)
 #### Tech we learn to use: 
