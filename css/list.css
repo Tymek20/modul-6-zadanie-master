@@ -98,7 +98,6 @@
     font-size: large;
     cursor: grab;
     transition: 0.5s;
-
 }
 
 .list__hiddenButtonMarkDone:hover {

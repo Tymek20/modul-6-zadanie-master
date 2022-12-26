@@ -6,7 +6,7 @@ html {
     box-sizing: inherit;
 }
 
-.font {
+body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
 }
@@ -16,4 +16,9 @@ html {
     margin: 0 auto;
     padding: 20px;
     background-color: hsl(0, 21%, 90%);
+}
+
+.footer {
+    color: grey;
+    text-align: end;
 }
