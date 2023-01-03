@@ -83,7 +83,7 @@
     border: none;
     background: transparent;
     font-size: large;
-    cursor: grab;
+    cursor: pointer;
     transition: 0.5s;
 }
 
@@ -95,7 +95,7 @@
     border: none;
     background: transparent;
     font-size: large;
-    cursor: grab;
+    cursor: pointer;
     transition: 0.5s;
 }
 
@@ -121,5 +121,9 @@
     .list__title {
         align-self: flex-start;
         padding-left: 10px;
+    }
+
+    .list__main {
+        padding: 10px 0px;
     }
 }

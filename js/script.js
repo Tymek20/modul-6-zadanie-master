@@ -4,8 +4,7 @@
     };
 
     let tasks = [];
-
-    let hideDoneTasks = false
+    let hideDoneTasks = false;
 
     const setFocus = () => {
         document.querySelector(".js-newTask").focus();
@@ -15,8 +14,6 @@
         tasks = [...tasks, { content: newTaskContent, done: false }];
 
         render();
-
-        formReset();
     };
 
     const removeTask = (taskIndex) => {
@@ -26,9 +23,13 @@
     };
 
     const toggleTaskDone = (taskIndex) => {
-        tasks = [...tasks.slice(0, taskIndex),
-        { ...tasks[taskIndex], done: !tasks[taskIndex].done },
-        ...tasks.slice(taskIndex + 1),
+        tasks = [
+            ...tasks.slice(0, taskIndex),
+            {
+                ...tasks[taskIndex], done:
+                    !tasks[taskIndex].done
+            },
+            ...tasks.slice(taskIndex + 1),
         ];
 
         render();
@@ -139,15 +140,12 @@
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        setFocus();
-
         const newTaskContent = document.querySelector(".js-newTask").value.trim();
 
-        if (newTaskContent === "") {
-            return;
+        if (newTaskContent !== "") {
+            addNewTask(newTaskContent);
         };
-
-        addNewTask(newTaskContent);
+        setFocus();
     };
 
     const init = () => {
