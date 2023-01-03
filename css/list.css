@@ -4,7 +4,6 @@
 
 .list__header {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     margin-top: 5px;
     padding-top: 10px;
@@ -75,7 +74,7 @@
     background-color: rgb(24, 128, 5);
 }
 
-.list__buttonAdditional {
+.list__buttonsAdditional {
     display: flex;
     flex-wrap: wrap;
 }
@@ -109,12 +108,18 @@
 }
 
 @media (max-width: 767px) {
-    .list__buttonAdditional {
+    .list__buttonsAdditional {
         display: grid;
         grid-template-columns: 1fr;
     }
 
     .list__header {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+        padding-left: 0px;
+    }
+
+    .list__title {
+        align-self: flex-start;
+        padding-left: 10px;
     }
 }
