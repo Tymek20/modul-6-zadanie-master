@@ -57,11 +57,6 @@
         });
     };
 
-    const toggleAllDoneTask = (task) => {
-        tasks = tasks.map((task) => ({ ...tasks, done: true }));
-        render();
-    };
-
     const toggleHideDoneTasks = () => {
         hideDoneTasks = !hideDoneTasks;
         render();
@@ -71,9 +66,7 @@
         let htmlString = "";
         for (const task of tasks) {
             htmlString += `
-            <li class="list__tasks${task.done && hideDoneTasks ? " list__item--hide" : ""
-                }">
-            
+            <li class="list__tasks${task.done && hideDoneTasks ? " list__item--hide" : ""}">
               <button class="list__doneButton button__task--done js-done"> 
               ${task.done ? "✓" : ""} 
               </button>
@@ -91,7 +84,7 @@
 
     const renderButtons = () => {
         const buttons = document.querySelector(".js-listHiddenButtons");
-        
+
         if (!tasks.length) {
             buttons.innerHTML = "";
             return;
