@@ -90,18 +90,18 @@
     };
 
     const renderButtons = () => {
-        let htmlButtonsString = "";
-
+        const buttons = document.querySelector(".js-listHiddenButtons");
+        
         if (!tasks.length) {
+            buttons.innerHTML = "";
             return;
         }
-        htmlButtonsString += `
+        buttons.innerHTML = `
         <button class=" list__hiddenButton js-hideDoneTask"> ${hideDoneTasks ? "Pokaż " : "Ukryj "
             }ukończone</button>
         <button class=" list__hiddenButtonMarkDone js-markAllDone"${tasks.every((task) => task.done) ? "disabled" : ""
-            }> Ukończ wszystkie</button>`;
-
-        document.querySelector(".js-listHiddenButtons").innerHTML = htmlButtonsString;
+            }> Ukończ wszystkie</button>
+            `;
     };
 
     const toggleAllDone = () => {
@@ -131,6 +131,7 @@
     const render = () => {
         renderTasks();
         renderButtons();
+        formReset();
 
         bindEvents();
         bindButtonsEvents();
